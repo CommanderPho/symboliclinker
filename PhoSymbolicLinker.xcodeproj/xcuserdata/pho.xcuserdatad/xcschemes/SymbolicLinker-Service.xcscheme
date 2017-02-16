@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E0E29B4E1041EA5C001084AF"
-               BuildableName = "SymbolicLinker.service"
+               BuildableName = "PhoSymbolicLinker.service"
                BlueprintName = "PhoSymbolicLinker-Service"
-               ReferencedContainer = "container:SymbolicLinker.xcodeproj">
+               ReferencedContainer = "container:PhoSymbolicLinker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0E29B4E1041EA5C001084AF"
-            BuildableName = "SymbolicLinker.service"
+            BuildableName = "PhoSymbolicLinker.service"
             BlueprintName = "PhoSymbolicLinker-Service"
-            ReferencedContainer = "container:SymbolicLinker.xcodeproj">
+            ReferencedContainer = "container:PhoSymbolicLinker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -61,9 +61,9 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "E0E29B4E1041EA5C001084AF"
-                     BuildableName = "SymbolicLinker.service"
+                     BuildableName = "PhoSymbolicLinker.service"
                      BlueprintName = "PhoSymbolicLinker-Service"
-                     ReferencedContainer = "container:SymbolicLinker.xcodeproj">
+                     ReferencedContainer = "container:PhoSymbolicLinker.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -74,9 +74,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0E29B4E1041EA5C001084AF"
-            BuildableName = "SymbolicLinker.service"
+            BuildableName = "PhoSymbolicLinker.service"
             BlueprintName = "PhoSymbolicLinker-Service"
-            ReferencedContainer = "container:SymbolicLinker.xcodeproj">
+            ReferencedContainer = "container:PhoSymbolicLinker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,9 +93,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0E29B4E1041EA5C001084AF"
-            BuildableName = "SymbolicLinker.service"
+            BuildableName = "PhoSymbolicLinker.service"
             BlueprintName = "PhoSymbolicLinker-Service"
-            ReferencedContainer = "container:SymbolicLinker.xcodeproj">
+            ReferencedContainer = "container:PhoSymbolicLinker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -13,8 +13,14 @@
 //
 // THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
 #import "SLAppDelegate.h"
 #import "SymbolicLinker.h"
+#import "PhoSymbolicLinker-Swift.h"
+//#import <PhoSymbolicLinker-Swift.h>
+//#import <PhoSymbolicLinker-Service-Swift.h>
+//#import "SymbolicLinker-Service-Bridging-Header.h"
+//#import "SymbolicLinkerService-Swift.h"
 
 int main(int argc, const char *argv[])
 {
@@ -60,5 +66,35 @@ int main(int argc, const char *argv[])
 		}
 	}
 }
+
+- (void)moveTargetAndMakeSymbolicLink:(NSPasteboard *)pboard userData:(NSString *)userData error:(NSString *__autoreleasing *)error
+{
+	NSArray *fileURLs = [pboard readObjectsForClasses:@[[NSURL class]] options:@{NSPasteboardURLReadingFileURLsOnlyKey: @YES}];
+	
+	if (fileURLs && fileURLs.count)
+	{
+		[fileURLs enumerateObjectsUsingBlock:^(NSURL *fileURL, NSUInteger i, BOOL *stop) {
+			//MakeSymbolicLink((__bridge CFURLRef)fileURL);
+			//MoveAndMakeSymbolicLink((__bridge CFURLRef)fileURL);
+			//[MoveAndMakeSymbolicLink fileURL];
+			
+			//MoveAndMakeSymbolicLink((__bridge CFURLRef)fileURL);
+		}];
+	}
+	else	// backward compatibility for the situation where public.url didn't work but NSFilenamesPboardType did
+	{
+		NSArray *filenames = [pboard propertyListForType:NSFilenamesPboardType];
+		
+		for (NSString *filename in filenames)
+		{
+			NSURL *fileURL = [NSURL fileURLWithPath:filename];
+			
+			if (fileURL) {
+				MoveAndMakeSymbolicLink((__bridge CFURLRef)fileURL);
+			}
+		}
+	}
+}
+
 
 @end
