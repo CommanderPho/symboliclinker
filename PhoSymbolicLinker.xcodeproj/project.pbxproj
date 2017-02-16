@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4DAA7761350418B00415B58 /* SymbolicLinkerService.icns in Resources */ = {isa = PBXBuildFile; fileRef = B4DAA7751350418B00415B58 /* SymbolicLinkerService.icns */; };
+		D7EBC2A71E55BC2D00588D01 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A11E55BC2D00588D01 /* ServicesMenu.strings */; };
+		D7EBC2A81E55BC2D00588D01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A31E55BC2D00588D01 /* Localizable.strings */; };
+		D7EBC2A91E55BC2D00588D01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A51E55BC2D00588D01 /* InfoPlist.strings */; };
+		D7EBC2AE1E55C46B00588D01 /* PhoSymbolicLinkerService.icns in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2AD1E55C46B00588D01 /* PhoSymbolicLinkerService.icns */; };
+		D7FBD65E1E55A99500D9F973 /* ExtendedSLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBD65D1E55A99500D9F973 /* ExtendedSLAppDelegate.swift */; };
+		E0E29B591041ED13001084AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E29B581041ED13001084AF /* MainMenu.xib */; };
+		E0E29B5C1041ED34001084AF /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E29B5B1041ED34001084AF /* SLAppDelegate.m */; };
+		E0E29B5E1041ED85001084AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E29B5D1041ED85001084AF /* Cocoa.framework */; };
+		E0E29B681041FAA4001084AF /* SymbolicLinker.m in Sources */ = {isa = PBXBuildFile; fileRef = E097F838060EB98E00B686E5 /* SymbolicLinker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4DAA7751350418B00415B58 /* SymbolicLinkerService.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SymbolicLinkerService.icns; sourceTree = "<group>"; };
+		D7EBC2A21E55BC2D00588D01 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		D7EBC2A41E55BC2D00588D01 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7EBC2A61E55BC2D00588D01 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7EBC2AD1E55C46B00588D01 /* PhoSymbolicLinkerService.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PhoSymbolicLinkerService.icns; sourceTree = "<group>"; };
+		D7EBC2B01E55C58700588D01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/PhoSymbolicLinkerService-Info.plist"; sourceTree = "<group>"; };
+		D7FBD6591E55A08800D9F973 /* InstallScript.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = InstallScript.command; sourceTree = "<group>"; };
+		D7FBD65C1E55A99400D9F973 /* SymbolicLinker-Service-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SymbolicLinker-Service-Bridging-Header.h"; sourceTree = "<group>"; };
+		D7FBD65D1E55A99500D9F973 /* ExtendedSLAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedSLAppDelegate.swift; sourceTree = "<group>"; };
+		E097F837060EB98E00B686E5 /* SymbolicLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolicLinker.h; sourceTree = "<group>"; };
+		E097F838060EB98E00B686E5 /* SymbolicLinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolicLinker.m; sourceTree = "<group>"; };
+		E0E29B4F1041EA5C001084AF /* PhoSymbolicLinker.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoSymbolicLinker.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E29B581041ED13001084AF /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		E0E29B5A1041ED34001084AF /* SLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		E0E29B5B1041ED34001084AF /* SLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		E0E29B5D1041ED85001084AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0E29B4D1041EA5C001084AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E29B5E1041ED85001084AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SymbolicLinker */ = {
+			isa = PBXGroup;
+			children = (
+				D7FBD65B1E55A8FE00D9F973 /* Scripts */,
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				D7EBC2AA1E55BC3400588D01 /* Strings */,
+			);
+			name = SymbolicLinker;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E0E29B5D1041ED85001084AF /* Cocoa.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7EBC2B11E55C58700588D01 /* PhoSymbolicLinkerService-Info.plist */,
+				D7EBC2AD1E55C46B00588D01 /* PhoSymbolicLinkerService.icns */,
+				B4DAA7751350418B00415B58 /* SymbolicLinkerService.icns */,
+				E0E29B581041ED13001084AF /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E0E29B5A1041ED34001084AF /* SLAppDelegate.h */,
+				E0E29B5B1041ED34001084AF /* SLAppDelegate.m */,
+				D7FBD65D1E55A99500D9F973 /* ExtendedSLAppDelegate.swift */,
+				E097F837060EB98E00B686E5 /* SymbolicLinker.h */,
+				E097F838060EB98E00B686E5 /* SymbolicLinker.m */,
+				D7FBD65C1E55A99400D9F973 /* SymbolicLinker-Service-Bridging-Header.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0E29B4F1041EA5C001084AF /* PhoSymbolicLinker.service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7EBC2AA1E55BC3400588D01 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				D7EBC2A11E55BC2D00588D01 /* ServicesMenu.strings */,
+				D7EBC2A31E55BC2D00588D01 /* Localizable.strings */,
+				D7EBC2A51E55BC2D00588D01 /* InfoPlist.strings */,
+			);
+			name = Strings;
+			sourceTree = "<group>";
+		};
+		D7FBD65B1E55A8FE00D9F973 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D7FBD6591E55A08800D9F973 /* InstallScript.command */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0E29B4E1041EA5C001084AF /* PhoSymbolicLinker-Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E29B541041EA5D001084AF /* Build configuration list for PBXNativeTarget "PhoSymbolicLinker-Service" */;
+			buildPhases = (
+				D7EBC2AC1E55BF6700588D01 /* ShellScript */,
+				E0E29B4B1041EA5C001084AF /* Resources */,
+				E0E29B4C1041EA5C001084AF /* Sources */,
+				E0E29B4D1041EA5C001084AF /* Frameworks */,
+				D7FBD65A1E55A25200D9F973 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhoSymbolicLinker-Service";
+			productName = SymbolicLinkerService;
+			productReference = E0E29B4F1041EA5C001084AF /* PhoSymbolicLinker.service */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					E0E29B4E1041EA5C001084AF = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = E0DC7C8508D40C5B00002C54 /* Build configuration list for PBXProject "SymbolicLinker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* SymbolicLinker */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0E29B4E1041EA5C001084AF /* PhoSymbolicLinker-Service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0E29B4B1041EA5C001084AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EBC2A81E55BC2D00588D01 /* Localizable.strings in Resources */,
+				D7EBC2A71E55BC2D00588D01 /* ServicesMenu.strings in Resources */,
+				D7EBC2A91E55BC2D00588D01 /* InfoPlist.strings in Resources */,
+				E0E29B591041ED13001084AF /* MainMenu.xib in Resources */,
+				B4DAA7761350418B00415B58 /* SymbolicLinkerService.icns in Resources */,
+				D7EBC2AE1E55C46B00588D01 /* PhoSymbolicLinkerService.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7EBC2AC1E55BF6700588D01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/English.lproj/ServicesMenu.strings",
+				"$(SRCROOT)/English.lproj/InfoPlist.strings",
+				"$(SRCROOT)/English.lproj/Localizable.strings",
+				"$(SRCROOT)/SymbolicLinkerService-Info.plist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/ServicesMenu.strings\"\ntouch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/InfoPlist.strings\"\ntouch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/Localizable.strings\"\ntouch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/SymbolicLinkerService-Info.plist\"\n";
+		};
+		D7FBD65A1E55A25200D9F973 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/outputLog.txt",
+				"$(DERIVED_FILE_DIR)/outputLogPBS.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /Users/pho/Dropbox/Coding/Executables/symboliclinker/InstallScript.command;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0E29B4C1041EA5C001084AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E29B5C1041ED34001084AF /* SLAppDelegate.m in Sources */,
+				E0E29B681041FAA4001084AF /* SymbolicLinker.m in Sources */,
+				D7FBD65E1E55A99500D9F973 /* ExtendedSLAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7EBC2A11E55BC2D00588D01 /* ServicesMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7EBC2A21E55BC2D00588D01 /* English */,
+			);
+			name = ServicesMenu.strings;
+			sourceTree = "<group>";
+		};
+		D7EBC2A31E55BC2D00588D01 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7EBC2A41E55BC2D00588D01 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D7EBC2A51E55BC2D00588D01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7EBC2A61E55BC2D00588D01 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D7EBC2B11E55C58700588D01 /* PhoSymbolicLinkerService-Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7EBC2B01E55C58700588D01 /* en */,
+			);
+			name = "PhoSymbolicLinkerService-Info.plist";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0DC7C8608D40C5B00002C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
+				WARNING_CFLAGS = "-Weverything";
+			};
+			name = Debug;
+		};
+		E0DC7C8708D40C5B00002C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				WARNING_CFLAGS = "-Weverything";
+			};
+			name = Release;
+		};
+		E0E29B521041EA5D001084AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+					USE_COCOA,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/PhoSymbolicLinkerService-Info.plist";
+				INSTALL_PATH = /Library/Services;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
+				PRODUCT_NAME = PhoSymbolicLinker;
+				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Debug;
+		};
+		E0E29B531041EA5D001084AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+					USE_COCOA,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/PhoSymbolicLinkerService-Info.plist";
+				INSTALL_PATH = /Library/Services;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
+				PRODUCT_NAME = PhoSymbolicLinker;
+				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0DC7C8508D40C5B00002C54 /* Build configuration list for PBXProject "SymbolicLinker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0DC7C8608D40C5B00002C54 /* Debug */,
+				E0DC7C8708D40C5B00002C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E29B541041EA5D001084AF /* Build configuration list for PBXNativeTarget "PhoSymbolicLinker-Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E29B521041EA5D001084AF /* Debug */,
+				E0E29B531041EA5D001084AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
