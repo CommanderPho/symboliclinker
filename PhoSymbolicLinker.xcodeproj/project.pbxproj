@@ -12,7 +12,6 @@
 		D7EBC2A81E55BC2D00588D01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A31E55BC2D00588D01 /* Localizable.strings */; };
 		D7EBC2A91E55BC2D00588D01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A51E55BC2D00588D01 /* InfoPlist.strings */; };
 		D7EBC2AE1E55C46B00588D01 /* PhoSymbolicLinkerService.icns in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2AD1E55C46B00588D01 /* PhoSymbolicLinkerService.icns */; };
-		D7EBC2B91E55C77700588D01 /* PhoSymbolicLinkerService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2B81E55C77700588D01 /* PhoSymbolicLinkerService-Info.plist */; };
 		D7FBD65E1E55A99500D9F973 /* ExtendedSLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBD65D1E55A99500D9F973 /* ExtendedSLAppDelegate.swift */; };
 		E0E29B591041ED13001084AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E29B581041ED13001084AF /* MainMenu.xib */; };
 		E0E29B5C1041ED34001084AF /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E29B5B1041ED34001084AF /* SLAppDelegate.m */; };
@@ -181,7 +180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7EBC2B91E55C77700588D01 /* PhoSymbolicLinkerService-Info.plist in Resources */,
 				D7EBC2A81E55BC2D00588D01 /* Localizable.strings in Resources */,
 				D7EBC2A71E55BC2D00588D01 /* ServicesMenu.strings in Resources */,
 				D7EBC2A91E55BC2D00588D01 /* InfoPlist.strings in Resources */,
@@ -209,7 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/ServicesMenu.strings\"\ntouch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/InfoPlist.strings\"\ntouch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/Localizable.strings\"\ntouch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/SymbolicLinkerService-Info.plist\"\n";
+			shellScript = "SRCROOT=\"/Users/pho/Repo/symboliclinker\"\necho \"SRCROOT: $(SRCROOT)\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/ServicesMenu.strings\"\necho \"touching: $(SRCROOT)/English.lproj/ServicesMenu.strings\"\ntouch \"$(SRCROOT)/English.lproj/ServicesMenu.strings\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/InfoPlist.strings\"\necho \"touching: $(SRCROOT)/English.lproj/InfoPlist.strings\"\ntouch \"$(SRCROOT)/English.lproj/InfoPlist.strings\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/Localizable.strings\"\necho \"touching: $(SRCROOT)/English.lproj/Localizable.strings\"\ntouch \"$(SRCROOT)/English.lproj/Localizable.strings\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/SymbolicLinkerService-Info.plist\"\necho \"touching: $(SRCROOT)/English.lproj/SymbolicLinkerService-Info.plist\"\ntouch \"$(SRCROOT)/English.lproj/SymbolicLinkerService-Info.plist\"";
 		};
 		D7FBD65A1E55A25200D9F973 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -347,7 +345,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PhoSymbolicLinkerService-Info.plist";
 				INSTALL_PATH = /Library/Services;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
 				PRODUCT_NAME = PhoSymbolicLinker;
 				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
@@ -373,7 +371,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PhoSymbolicLinkerService-Info.plist";
 				INSTALL_PATH = /Library/Services;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
 				PRODUCT_NAME = PhoSymbolicLinker;
 				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
