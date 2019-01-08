@@ -1,16 +1,3 @@
-# Ignore Xcode stuff:
-build/*
-*.mode*
-*.pbxuser
-
-# Ignore Finder stuff:
-.DS_Store
-profile
-
-# Ignore leftovers from other SCM systems:
-CVS
-.svn
-
 # Created by https://www.gitignore.io/api/xcode,swift,macos,objective-c
 # Edit at https://www.gitignore.io/?templates=xcode,swift,macos,objective-c
 
