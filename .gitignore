@@ -176,3 +176,4 @@ playground.xcworkspace
 
 # End of https://www.gitignore.io/api/xcode,swift,macos,objective-c
 *.xcbkptlist
+outputLogPBS.txt
