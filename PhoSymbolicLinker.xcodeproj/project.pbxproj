@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B4DAA7761350418B00415B58 /* SymbolicLinkerService.icns in Resources */ = {isa = PBXBuildFile; fileRef = B4DAA7751350418B00415B58 /* SymbolicLinkerService.icns */; };
+		D7D47AF521E590AA0045D498 /* ExtendedSLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBD65D1E55A99500D9F973 /* ExtendedSLAppDelegate.swift */; };
 		D7EBC2A71E55BC2D00588D01 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A11E55BC2D00588D01 /* ServicesMenu.strings */; };
 		D7EBC2A81E55BC2D00588D01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A31E55BC2D00588D01 /* Localizable.strings */; };
 		D7EBC2A91E55BC2D00588D01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2A51E55BC2D00588D01 /* InfoPlist.strings */; };
 		D7EBC2AE1E55C46B00588D01 /* PhoSymbolicLinkerService.icns in Resources */ = {isa = PBXBuildFile; fileRef = D7EBC2AD1E55C46B00588D01 /* PhoSymbolicLinkerService.icns */; };
-		D7FBD65E1E55A99500D9F973 /* ExtendedSLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBD65D1E55A99500D9F973 /* ExtendedSLAppDelegate.swift */; };
 		E0E29B591041ED13001084AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E29B581041ED13001084AF /* MainMenu.xib */; };
 		E0E29B5C1041ED34001084AF /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E29B5B1041ED34001084AF /* SLAppDelegate.m */; };
 		E0E29B5E1041ED85001084AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E29B5D1041ED85001084AF /* Cocoa.framework */; };
@@ -149,10 +149,12 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					E0E29B4E1041EA5C001084AF = {
+						DevelopmentTeam = K7B7DK4EX4;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -207,11 +209,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SRCROOT=\"/Users/pho/Repo/symboliclinker\"\necho \"SRCROOT: $(SRCROOT)\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/ServicesMenu.strings\"\necho \"touching: $(SRCROOT)/English.lproj/ServicesMenu.strings\"\ntouch \"$(SRCROOT)/English.lproj/ServicesMenu.strings\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/InfoPlist.strings\"\necho \"touching: $(SRCROOT)/English.lproj/InfoPlist.strings\"\ntouch \"$(SRCROOT)/English.lproj/InfoPlist.strings\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/Localizable.strings\"\necho \"touching: $(SRCROOT)/English.lproj/Localizable.strings\"\ntouch \"$(SRCROOT)/English.lproj/Localizable.strings\"\n\n//touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/SymbolicLinkerService-Info.plist\"\necho \"touching: $(SRCROOT)/English.lproj/SymbolicLinkerService-Info.plist\"\ntouch \"$(SRCROOT)/English.lproj/SymbolicLinkerService-Info.plist\"";
+			shellScript = "# SRCROOT=\"/Users/pho/Repo/symboliclinker\"\n#SRCROOT=\"/Users/pho/Dropbox/Coding/Executables/symboliclinker\"\necho \"SRCROOT: $SRCROOT\"\n\n# //touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/ServicesMenu.strings\"\necho \"touching: $(SRCROOT)/English.lproj/ServicesMenu.strings\"\n#touch \"$(SRCROOT)/English.lproj/ServicesMenu.strings\"\n\n# //touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/InfoPlist.strings\"\necho \"touching: $(SRCROOT)/English.lproj/InfoPlist.strings\"\n#touch \"$(SRCROOT)/English.lproj/InfoPlist.strings\"\n\n# //touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/English.lproj/Localizable.strings\"\necho \"touching: $(SRCROOT)/English.lproj/Localizable.strings\"\n#touch \"$(SRCROOT)/English.lproj/Localizable.strings\"\n\n# //touch \"/Users/pho/Dropbox/Coding/Executables/symboliclinker/SymbolicLinkerService-Info.plist\"\necho \"touching: $(SRCROOT)/English.lproj/SymbolicLinkerService-Info.plist\"\n#touch \"$(SRCROOT)/English.lproj/SymbolicLinkerService-Info.plist\"\n";
 		};
 		D7FBD65A1E55A25200D9F973 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -220,9 +222,9 @@
 				"$(DERIVED_FILE_DIR)/outputLog.txt",
 				"$(DERIVED_FILE_DIR)/outputLogPBS.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = /Users/pho/Dropbox/Coding/Executables/symboliclinker/InstallScript.command;
+			shellScript = "/Users/pho/Dropbox/Coding/Executables/symboliclinker/InstallScript.command\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -233,7 +235,7 @@
 			files = (
 				E0E29B5C1041ED34001084AF /* SLAppDelegate.m in Sources */,
 				E0E29B681041FAA4001084AF /* SymbolicLinker.m in Sources */,
-				D7FBD65E1E55A99500D9F973 /* ExtendedSLAppDelegate.swift in Sources */,
+				D7D47AF521E590AA0045D498 /* ExtendedSLAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,16 +273,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -292,9 +303,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
 				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = "-Weverything";
 			};
@@ -304,16 +317,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -322,8 +344,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = "-Weverything";
@@ -335,9 +359,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				DEVELOPMENT_TEAM = K7B7DK4EX4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(GCC_PREPROCESSOR_DEFINITIONS)",
 					USE_COCOA,
@@ -345,9 +372,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PhoSymbolicLinkerService-Info.plist";
 				INSTALL_PATH = /Library/Services;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
 				PRODUCT_NAME = PhoSymbolicLinker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -361,9 +389,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				DEVELOPMENT_TEAM = K7B7DK4EX4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(GCC_PREPROCESSOR_DEFINITIONS)",
 					USE_COCOA,
@@ -371,9 +402,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PhoSymbolicLinkerService-Info.plist";
 				INSTALL_PATH = /Library/Services;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hale.pho.PhoSymbolicLinker;
 				PRODUCT_NAME = PhoSymbolicLinker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SymbolicLinker-Service-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = x86_64;

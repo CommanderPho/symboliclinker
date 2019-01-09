@@ -74,7 +74,8 @@ void MakeSymbolicLinkToDesktop(CFURLRef url)
 	if (SLIsEqualToString(fileName, CFSTR("/")))	// true if the user is making a symlink to the boot volume
 	{
 		CFRelease(fileName);
-		fileName = CFURLCopyFileSystemPath(url, kCFURLHFSPathStyle);	// use CoreFoundation to figure out the boot volume's name
+		fileName = CFURLCopyFileSystemPath(url, kCFURLPOSIXPathStyle);
+		//fileName = CFURLCopyFileSystemPath(url, kCFURLHFSPathStyle);	// use CoreFoundation to figure out the boot volume's name
 	}
 	fileNameWithSymlinkExtension = CFStringCreateWithFormat(kCFAllocatorDefault, NULL, CFSTR("%@ symlink"), fileName);
 	destinationURL = CFURLCreateCopyAppendingPathComponent(kCFAllocatorDefault, desktopFolderURL, fileNameWithSymlinkExtension, false);
@@ -174,4 +175,11 @@ void MakeSymbolicLink(CFURLRef url)
 done:
 	CFRelease(urlNoPathComponent);
 	CFRelease(pathStringNoPathComponent);
+}
+
+
+// TODO: this was unimplemented in the Swift file.
+void MoveAndMakeSymbolicLink(CFURLRef url)
+{
+
 }

@@ -49,10 +49,10 @@ public extension SLAppDelegate {
 //		
 //		
 //	}
-	@objc public func MoveAndMakeSymbolicLink(url: CFURL) {
+	public func MoveAndMakeSymbolicLink(url: CFURL) {
 		debugPrint("MoveAndMakeSymbolicLink")
 		let newURL: NSURL = url
-		let newURLString: String = (newURL.standardized?.absoluteString)!
+		//let newURLString: String = (newURL.standardized?.absoluteString)!
 		debugPrint("input: \(newURL)")
 	}
 	

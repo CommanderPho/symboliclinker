@@ -17,6 +17,8 @@
 #import "SLAppDelegate.h"
 #import "SymbolicLinker.h"
 #import "PhoSymbolicLinker-Swift.h"
+
+
 //#import <PhoSymbolicLinker-Swift.h>
 //#import <PhoSymbolicLinker-Service-Swift.h>
 //#import "SymbolicLinker-Service-Bridging-Header.h"
@@ -78,7 +80,7 @@ int main(int argc, const char *argv[])
 			//MoveAndMakeSymbolicLink((__bridge CFURLRef)fileURL);
 			//[MoveAndMakeSymbolicLink fileURL];
 			
-			//MoveAndMakeSymbolicLink((__bridge CFURLRef)fileURL);
+			MoveAndMakeSymbolicLink((__bridge CFURLRef)fileURL);
 		}];
 	}
 	else	// backward compatibility for the situation where public.url didn't work but NSFilenamesPboardType did
