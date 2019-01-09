@@ -176,3 +176,10 @@ done:
 	CFRelease(urlNoPathComponent);
 	CFRelease(pathStringNoPathComponent);
 }
+
+
+// TODO: this was unimplemented in the Swift file.
+void MoveAndMakeSymbolicLink(CFURLRef url)
+{
+
+}

@@ -19,3 +19,5 @@
 
 
 void MakeSymbolicLink(CFURLRef url);
+
+void MoveAndMakeSymbolicLink(CFURLRef url);

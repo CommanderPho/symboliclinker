@@ -14,7 +14,7 @@ import Swift
 //	
 //}
 
-@objc public extension SLAppDelegate {
+public extension SLAppDelegate {
 	
 //	@objc public func handleServices(pboard: NSPasteboard, userData: String, error: NSErrorPointer) {
 //		debugPrint("handleServices called!")
@@ -49,7 +49,7 @@ import Swift
 //		
 //		
 //	}
-	@objc public func MoveAndMakeSymbolicLink(url: CFURL) {
+	public func MoveAndMakeSymbolicLink(url: CFURL) {
 		debugPrint("MoveAndMakeSymbolicLink")
 		let newURL: NSURL = url
 		//let newURLString: String = (newURL.standardized?.absoluteString)!
