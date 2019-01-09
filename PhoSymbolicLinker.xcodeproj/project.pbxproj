@@ -213,7 +213,7 @@
 		};
 		D7FBD65A1E55A25200D9F973 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -222,7 +222,7 @@
 				"$(DERIVED_FILE_DIR)/outputLog.txt",
 				"$(DERIVED_FILE_DIR)/outputLogPBS.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "/Users/pho/Dropbox/Coding/Executables/symboliclinker/InstallScript.command\n";
 		};
